@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bindIt';
+  payload: {counter: number}
+
+  onConsole(event){
+    console.log(event)
+  }
+
+  onPayload(event: {counter: number}){
+    this.payload = event
+  }
 }
